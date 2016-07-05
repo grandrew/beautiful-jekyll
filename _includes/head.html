@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
 
   <meta name="author" content="{{ site.author.name }}" />
   
@@ -68,4 +69,9 @@
   <meta property="og:image" content="" />
   {% endif %}
   
+  <script type="text/javascript">
+    var host = "yoursite.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+  </script>
 </head>
