@@ -56,6 +56,8 @@ Junk Systems is currently responsible for setting the computation price and tran
 
 If the SSH session is interrupted for any other reason than normal finish (either 1 CPU hour reached or 3 wall-clock hour passed) - the order will become orphaned and its status will be decided at the end of the operation month based on your rating. 
 
+Check out [earnings calculator](https://jscalc.io/calc/znUKnWTrXZtFnl9t) to estimate your profits.
+
 ## Rating System
 
 Currently we are testing our rating so it may not work at all. 
