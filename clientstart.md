@@ -12,7 +12,7 @@ You get a non-privileged linux user shell SSH credentials by issuing a `GET` req
 https://proxy.junk.systems/order/<your Client Hash>
 ~~~
 
-the reply is a `JSON` object with information of how to access the SSH shell. You will be immediately charged for 1 CPU-hour. The order will be cancelled automatically if you close the connection within 20 seconds (or will not connect at all).
+where `Client Hash` is your identity thay you can find in the [Client Login](https://junk.systems/client/) area. The reply is a `JSON` object with information of how to access the SSH shell. You will be immediately charged for 1 CPU-hour. The order will be cancelled automatically if you close the connection within 20 seconds (or will not connect at all).
 
 The JSON object has the following structure: 
 
@@ -36,6 +36,13 @@ ssh -i <file you saved privkey to> -l <username> -p <port> <host>
 You can use the provided private key at the `privkey` field as ssh identity or you can log in using your own ssh public key that you can provided in the Client interface.
 
 We provide an example helper python script [here](https://github.com/junk-systems/jusy/blob/master/jusy-client.py) to show how it can be used.
+
+~~~
+$ wget https://raw.githubusercontent.com/junk-systems/jusy/master/jusy-client.py
+$ python jusy-client.py <Your Client Hash>
+...
+juser234253@remote:~ $
+~~~
 
 ## Machine types and specs
 
