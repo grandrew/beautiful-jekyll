@@ -6,7 +6,7 @@ subtitle: Free heat from your PC
 
 ## Requirements
 
-1. A **decent CPU** that is about AMD 1090T performance per core. 
+1. A **decent CPU** that is about AMD 1090T performance per core. This is the main strict requirement.
     - jusy-server script will automatically test your CPU for compatibility, you may check the result in the log at `/var/log/jusy.log`
 2. At least **2GB RAM per CPU** core
 3. At least **10GB per core** free space on disk
@@ -27,15 +27,17 @@ $ sudo python jusy-server.py --install-cronjob --daemon <your Owner Hash here>
 
 You can host as many nodes as you want. This command is available for copy-paste in the Node Owner interface.
 
+You may want to set up a [chroot jail]({% post_url 2016-07-05-Share-Chroot-Jail %}) or a virtual machine to ensure flawless hosting.
+
 ## Updates
 
 The script tries to install itself at `/opt` and write cron job to start on boot and update itself. But in some cases you will have to start it manually using the last command in the listing above.
 
 ## Security Considerations
 
-The security of your system mostly depends on the security of Linux kernel, so you should always keep it updated with the latest security patches.
+The security of your system mostly depends on the security of Linux kernel and system configuration, so you should at least always keep the kernel updated with the latest security patches. If you are not sure that your system is properly configured (which is usually true for development and test machines) you may want to follow [instructions to set up a chroot jail]({% post_url 2016-07-05-Share-Chroot-Jail %}) or launch a virtual machine or a docker container.
 
-It is generally not recommended to host the node if you are not comfortable with the possibility that you environment can be compromised.
+It is generally not recommended to host the node if you are not comfortable with the possibility that you environment can be compromised or may require reboot and reinstall.
 
 However, the script tries to apply the following limitations per client:
 
