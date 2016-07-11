@@ -61,6 +61,10 @@ $ python jusy-client.py <Your Client Hash>
 juser234253@remote:~ $
 ~~~
 
+## Example project
+
+You can find a demo project based on [execnet](http://codespeak.net/execnet/index.html) distributed python execution framework at the [Junk Systems Github repository](https://github.com/junk-systems/jusy).
+
 ## Machine types and specs
 
 Generally it is up to you to decide whether the machine is suitable for your needs. The only testing we currently do is checking that the node can execute a PRNG-test within a fixed amount of time which is roughly equivalent to a single AMD 1090T CPU core.
@@ -75,7 +79,7 @@ We use bitcoin as system currency to support anonymity on both sides. You can bu
 
 ## Sending tasks
 
-You may use different clustering techniques like MPI to send tasks to nodes, or implement your own method. For example, you can send binaries to execute or rely on tools that may or may not be available on the node.
+You may use different clustering techniques like BOINC to send tasks to nodes, or implement your own method. For example, you can send portable binaries to execute or rely on tools that may be available on the node.
 
 ## Master SSH connection 
 

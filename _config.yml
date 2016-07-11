@@ -16,7 +16,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Junk.Systems - compute-sharing platform (BETA)
+title: Junk.Systems Experiment
 
 # Short description of your site
 description:  Share your unused CPU time! Extremely cheap pricing for non-guaranteed computation resources offloaded from the community.
