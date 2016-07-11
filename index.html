@@ -26,6 +26,22 @@ subtitle: Share your unused CPU time for &#xf15a;<br/>Buy extremely cheap comput
 
 <div class="main-explain-area jumbotron">
   <p>Junk.Systems is the easiest way to share your CPU and get cheap computing power.</p>
+  <pre><span style="color: gray">
+# To start sharing your CPU:
+# 1. Download the client script</span>
+$ wget -q https://raw.githubusercontent.com/junk-systems\
+/jusy/master/jusy-server.py
+<span style="color: gray">
+# 2. Run it</span>
+$ sudo python jusy-server.py --install-cronjob --daemon &lt;your hash here&gt;
+<span style="color: gray">
+# 3. Check that everything is okay</span>
+$ tail /var/log/jusy.log
+2016-07-11 - jusy - INFO - You already have the latest version.
+2016-07-11 - jusy - INFO - Server says: accepted as Junk.Systems resource
+<span style="color: gray">
+# All done! Now wait for bitcoins!</span></pre>
+
   <p>We offer:</p>
   <ul>
     <li>Untrusted site</li>

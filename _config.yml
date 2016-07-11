@@ -25,9 +25,9 @@ description:  Share your unused CPU time! Extremely cheap pricing for non-guaran
 
 # List of links in the navigation bar
 navbar-links:
+  Contacts: "contacts"
   Sign in (Node Owner): "https://junk.systems/node"
   Sign in (Client): "https://junk.systems/client"
-  # About: "aboutme"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
